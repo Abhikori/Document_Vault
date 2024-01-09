@@ -1,0 +1,308 @@
+/********** Template CSS **********/
+:root {
+    --primary: #06A3DA;
+    --secondary: #F57E57;
+    --light: #EEF9FF;
+    --dark: #091E3E;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.btn {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+
+
+.top-shape::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 100%;
+    top: 0;
+    left: -17px;
+    background: var(--primary);
+    transform: skew(40deg);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Jost', sans-serif;
+    padding: 35px 15px;
+    font-size: 18px;
+    color: var(--dark);
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link,
+    .sticky-top.navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+.container-home{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* CSS */
+.button-65 {
+    margin-top: 20px;
+    margin-left: 30px;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #2f80ed;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  /* background-color: #06A3DA; */
+    /* color: fff; */
+    box-shadow: 5px 5px 5px rgb(11, 11, 11,0.7) , inset 1px 1px 6px rgb(185, 209, 229);
+    transition: background-color 0.s, box-shadow 0.5s,border-radius 0.5s ;
+}
+
+.button-65:hover {
+  background-color: #1366d6;
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .5s;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+    color: rgb(10, 10, 10) 
+}
+
+.button-65:hover:after {
+  opacity: .5;
+}
+
+.button-65:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button-65:active:after {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .button-65 {
+    padding: 14px 22px;
+    width: 176px;
+  }
+  .container-home-img{
+    display: none;
+  }
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: var(--primary);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menu__item {
+    list-style: none;
+  }
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+
+  .menu__link {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  #webbutton{
+    display: flex;
+    margin-left: 375px;
+    margin-top: 20px;
+    height: 60px;
+    width: 250px; 
+    background-color: #06A3DA;
+    color: fff;
+    transition: background-color 0.5s, box-shadow 0.5s,border-radius 0.5s;
+    box-shadow: 5px 5px 5px rgb(11, 11, 11,0.7) , inset 2px 2px 8px rgb(255, 255, 255);
+  }
+  #webbutton p{
+    margin: 15px 62px;
+  }
+  #webbutton:hover {
+    background: #F57E57; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 5px;
+    color: black;
+}
+
+.web-container-home{
+  
+  display: flex;
+  /* border: 1px solid red; */
+  
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+
+.web-child-container{
+  width: 1300px;
+  height: 450px;
+  /* border: 2px solid red; */
+  
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+
+.capturedimage{
+  width: 1300px;
+  height: 450px;
+  border: 2px solid green;
+  background-color: #5986ca;
+}
+.capturedimage img{
+  margin: auto;
+  display: block;
+  height: 300px;
+  width: 400px;
+}
+
+.capturedimage .confirmation-buttons{
+  margin: auto;
+  width: 20%;
+  margin-top: 20px;
+  /* border: 1px solid black; */
+  height: 60px;
+  width: 400px; 
+}
+.capturedimage .confirmation-buttons :nth-child(1){
+  background-color: #06A3DA;
+  color: fff;
+  height: 50px;
+  width: 150px; 
+  margin: 20px;
+  box-shadow: 5px 5px 5px rgb(11, 11, 11,0.7) , inset 2px 2px 8px rgb(255, 255, 255);
+}
+.capturedimage .confirmation-buttons :nth-child(2){
+  background-color: #06A3DA;
+    color: fff;
+    height: 50px;
+    width: 150px; 
+    margin: 20px;
+  box-shadow: 5px 5px 5px rgb(11, 11, 11,0.7) , inset 2px 2px 8px rgb(255, 255, 255);
+}
+.capturedimage .confirmation-buttons :nth-child(1):hover {
+  background: #F57E57; 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 5px;
+  color: black;
+}
+.capturedimage .confirmation-buttons :nth-child(2):hover {
+  background: #F57E57; 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 5px;
+  color: black;
+}
