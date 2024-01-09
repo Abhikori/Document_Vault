@@ -69,20 +69,21 @@ Document Vault is a web application designed to help users securely store and ea
 
 ## Getting Started
 
-1. Clone the repository:
+Clone the project
 
-   ```bash
-   git clone https://github.com/AbhiKori/Document_Vault.git
-  ```
+```bash
+  git clone https://link-to-project
+```
 
-2. Install dependencies
 
-  ```bash
-    npm install
-  ```
+Install dependencies
 
-3. Start the server
+```bash
+  npm install
+```
 
-  ```bash
-    npm run start
-  ```
+Start the server
+
+```bash
+  npm run start
+```
